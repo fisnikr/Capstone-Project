@@ -1,0 +1,20 @@
+﻿<Window x:Class="projekt_v2.Windows.QuizWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:projekt_v2.Windows"
+        mc:Ignorable="d"
+        Title="QuizWindow" Height="350" Width="525">
+    <Grid Background="#FF2D306B">
+        <Button x:Name="txtQuestion1" Content="Question 1" HorizontalAlignment="Left" Margin="37,101,0,0" VerticalAlignment="Top" Width="130" Click="Button_Click" Height="47" Background="White" FontWeight="Bold" FontSize="14"/>
+        <Label Content="Select Question" HorizontalAlignment="Left" Margin="161,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF1EBEB" FontSize="22"/>
+        <Button x:Name="txtQuestion2" Content="Question 2" HorizontalAlignment="Left" Margin="187,101,0,0" VerticalAlignment="Top" Width="130" Height="47" Background="White" FontWeight="Bold" FontSize="14" Click="txtQuestion2_Click"/>
+        <Button x:Name="txtQuestion3" Content="Question 3" HorizontalAlignment="Left" Margin="339,101,0,0" VerticalAlignment="Top" Width="130" Height="47" Background="White" FontWeight="Bold" FontSize="14" Click="txtQuestion3_Click"/>
+        <Button x:Name="txtQuestion4" Content="Question 4" HorizontalAlignment="Left" Margin="37,175,0,0" VerticalAlignment="Top" Width="130" Height="47" Background="White" FontWeight="Bold" FontSize="14" Click="txtQuestion4_Click"/>
+        <Button x:Name="txtQuestion5" Content="Question 5" HorizontalAlignment="Left" Margin="187,175,0,0" VerticalAlignment="Top" Width="130" Height="47" Background="White" FontWeight="Bold" FontSize="14" Click="txtQuestion5_Click"/>
+        <Button x:Name="txtQuestion6" Content="Question 6" HorizontalAlignment="Left" Margin="339,175,0,0" VerticalAlignment="Top" Width="130" Height="47" Background="White" FontWeight="Bold" FontSize="14" Click="txtQuestion6_Click"/>
+        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="357,261,0,0" VerticalAlignment="Top" Width="112" Height="38" Background="Black" FontWeight="Bold" FontSize="14" BorderBrush="White" Foreground="White" Click="btnSubmit_Click"/>
+
+    </Grid>
+</Window>

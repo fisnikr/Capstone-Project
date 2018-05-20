@@ -1,0 +1,29 @@
+﻿<Window x:Class="projekt_v2.Windows.Question1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:projekt_v2.Windows"
+        mc:Ignorable="d"
+        Title="Question1" Height="350" Width="525">
+    <Grid Loaded="Grid_Loaded" Background="#FF2D306B">
+        <TextBox x:Name="txtQuestion" HorizontalAlignment="Left" Height="47" Margin="47,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="424" IsReadOnly="True" BorderBrush="{x:Null}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <DataGrid AutoGenerateColumns="False" x:Name="dataGrid1" HorizontalAlignment="Left" Margin="47,126,0,0" VerticalAlignment="Top" Height="136" Width="424">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Answer" Binding="{Binding QAnswer}" />
+                <DataGridCheckBoxColumn Header="Choose the correct one" Binding="{Binding MyBool}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="360,273,0,0" VerticalAlignment="Top" Width="112" Height="38" Background="Black" FontWeight="Bold" FontSize="14" BorderBrush="White" Foreground="White" Click="btnSubmit_Click" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.211"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Label Content="Select Answer" HorizontalAlignment="Left" Margin="161,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF1EBEB" FontSize="22"/>
+    </Grid>
+</Window>
